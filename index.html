@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Enter Spot Silver</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <style>
+	body {
+		background-image:url('coins.jpg');
+		background-color:white;
+		background-repeat:no-repeat;
+		background-position:center; 
+		background-attachment:fixed;
+		background-size:cover;	
+	}
+  </style>
+</head>
+<body>
+
+
+<div class="container text-center">
+	<h2>Metals Value Calculator</h2>	
+	<h4>Silver or Gold?</h4>
+
+	<form action="spot.php" method="post"  role="form">
+		<div class="radio">
+		  <label><input type="radio" name="opt_metal" value="silver" checked>Silver (Ag)</label>
+		</div>
+		<div class="radio">
+		  <label><input type="radio" name="opt_metal" value="gold">Gold (Au)</label>
+		</div>
+
+		<div class="form-group form-inline">
+		  <input type="number" step="any" min="0" id="spot" name="input_metalSpot" placeholder="Enter Spot Price" class="form-control" autofocus required>
+	  	</div>
+  		
+		<button type="submit" class="btn btn-success">Submit</button>
+	</form>
+</div>
+
+
+</body>
+</html>
